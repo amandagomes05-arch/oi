@@ -1,1 +1,132 @@
+/* Configurações Gerais e Resets */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f9f4; /* Verde bem claro de fundo */
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2e7d32; /* Verde Campo */
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Container da Calculadora */
+.calculadora-container {
+    background-color: #ffffff;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.calculadora-container h2 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+.calculadora-container p {
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+/* Campos de Entrada */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #444444;
+}
+
+.input-group input {
+    padding: 12px;
+    border: 2px solid #cccccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #1565c0; /* Azul Tecnologia ao focar */
+    outline: none;
+}
+
+/* Botão de Ação */
+button {
+    background-color: #1565c0; /* Azul Tecnologia */
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0d47a1;
+}
+
+/* Área de Resultado */
+#resultado {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Classes utilitárias que o JavaScript vai usar */
+.sucesso {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+}
+
+.erro {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #888888;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+/* Responsividade para Celulares (Media Query) */
+@media screen and (max-width: 600px) {
+    .calculadora-container {
+        margin: 20px;
+        padding: 20px;
+    }
+    header h1 {
+        font-size: 1.6rem;
+    }
+}
