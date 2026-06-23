@@ -21,3 +21,10 @@ function calcularSementes() {
     resultadoDiv.className = "sucesso";
     resultadoDiv.innerHTML = `Para cultivar uma área de <strong>${area} m²</strong>, você precisará de aproximadamente <strong>${totalSementes} sementes</strong> de hortaliças.`;
 }
+
+// Limpa a resposta antiga assim que o usuário começa a digitar um novo valor
+document.getElementById("area").addEventListener("input", function() {
+    const resultadoDiv = document.getElementById("resultado");
+    resultadoDiv.innerText = "";
+    resultadoDiv.className = ""; 
+});
