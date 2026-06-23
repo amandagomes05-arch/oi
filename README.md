@@ -32,8 +32,8 @@
 ---
 
 ## 👤 Autoria
-* **Estudante:** [Seu Nome Completo]
-* **Instituição de Ensino:** [Nome da Sua Escola/Colégio]
+* **Estudante:** Amanda Gomes
+* **Instituição de Ensino:** Colégio Estadual Bandeirantes
 * **Ano:** 2026
 
 [cite_start]*Projeto desenvolvido com fins educativos para o Concurso Agrinho 2026, com o apoio da formação de tecnologia da Alura.* [cite: 4, 88, 231]
